@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.SuperChargeFrameBody {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f6;
+  height: 100vh;
+  position: relative;
+}
+
+.superChargeContainer {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+.superCharge {
+  color: rgb(0, 0, 75);
+  font-family: "Kanit", sansa -serif;
+  font-weight: 600;
+  display: flex;
+  z-index: 1;
+  transform: scaleX(1.5);
+  font-size: 2.6rem;
+  padding: 50px;
+  position: relative;
+}
+.superImgContiner {
+  position: absolute;
+  right: 1.5%;
+  top: 1.5%;
+  display: flex;
+  align-items: center;
+  padding-left: 30%;
+  // padding-top: 20%;
+  justify-content: center;
+  img {
+    max-width: 100%;
+  }
+}
+
+.superParaContainer {
+  z-index: 1;
+  position: absolute;
+  left: 7.5%;
+  top: 45%;
+  font-family: "Poppins", sans-serif;
+  color: rgb(151, 151, 151);
+}
+
+@media screen and (max-width: 1115px) {
+  .SuperChargeFrameBody{
+    height: 80vh;
+  }
+  .superCharge {
+    font-size: 1.5rem;
+    top: 1vw;
+    padding: 0px;
+  }
+  .superParaContainer {
+    top: 24vh;
+    left: 5%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .SuperChargeFrameBody{
+    height: 70vh;
+  }
+  .superCharge {
+    font-size: 1.5rem;
+    top: 1vh;
+    padding-left: 2%;
+  }
+  .superParaContainer {
+    top: 37%;
+    padding-left: 1%;
+    left: 3%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and  (max-width:700px){
+  .SuperChargeFrameBody{
+    height: 100vh;
+  }
+    .superCharge{
+        top: -130px;
+        font-size: 2rem;
+        left: 15%;
+    }
+    .superImgContiner{
+        top: 30%;
+        padding-left: 2%;
+    }
+    .superParaContainer{
+        left: 6%;
+        top: 14%;
+    }
+
+}
+
+@media screen and (max-width:450px){
+  .SuperChargeFrameBody{
+    height: 60vh;
+  }
+    .superParaContainer{
+        top: 40px;
+    }
+    .superCharge{
+        font-size: 1.3rem;
+    }
+    .superImgContiner{
+        top: 30%;
+    }
+}
+
+@media screen and (max-width:329px){
+  .superParaContainer{
+    top: 30px;
+}
+  .superImgContiner{
+    top: 40%;
+}
+}

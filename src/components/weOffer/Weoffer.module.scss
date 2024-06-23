@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import '../../fonts/Belgro.scss';
+.weofferBody{
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+    // background-color: red;
+    // width: 100%;
+}
+
+.weofferContainer{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+    width: 50%;
+    margin-left: 10%;
+    h1{
+        font-size: 2.4rem;
+        color: rgb(39, 39, 39);
+        font-family: "Belgro", sans-serif;
+        padding-bottom: 2vh;
+    }
+    P{
+    font-family: "Poppins", sans-serif;
+    color: rgb(151, 151, 151);
+    }
+}
+
+.offersContainer{
+    display: flex;
+    flex-basis: 110%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 1%;
+    width: 100%;
+    margin-top:2% ;
+    padding: 10px;
+    // background-color: red;
+}
+
+@media screen and (max-width:1200px){
+    .weofferBody{
+       flex-direction: column;
+       align-items: center;
+    }
+    .weofferContainer{
+        width: 90%;
+        word-break: keep-all;
+        p{
+            padding-right: 30%;
+            br{
+                display: none;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .weofferContainer{
+        h1{
+            font-size: 1.6rem;
+        }
+    }
+    .weofferContainer{
+        h1{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+

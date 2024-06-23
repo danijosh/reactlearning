@@ -1,0 +1,133 @@
+.navcontainer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f6;
+}
+
+.logoContainer {
+  height: inherit;
+  width: 170px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* background-color: red; */
+}
+.logoContainer > img {
+  width: 150px;
+  height: 45px;
+}
+
+.navlist {
+  display: flex;
+  /* align-items: center; */
+  width: 450px;
+  height: 54px;
+  justify-content: space-between;
+  /* background-color: green; */
+  margin-right: 50px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  /* font-weight: lighter; */
+}
+
+.navlist > li {
+  list-style-type: none;
+  display: flex;
+  height: inherit;
+  align-items: center;
+  /* padding: 10px 33px; */
+  color: black;
+  /* background-color: rebeccapurple; */
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 300;
+  transition: border-bottom ease-in-out 0.2s;
+}
+
+.navlist > li:hover {
+  border-bottom: 2px solid black;
+}
+
+.navlist > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlist > button {
+  padding: 10px 33px;
+  border-radius: 15px;
+  height: inherit;
+  border: 2px rgb(136, 136, 255) solid;
+  width: 150px;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: rgb(136, 136, 255);
+}
+
+.navlist > button:hover {
+  color: white;
+  background-color: rgb(136, 136, 255);
+}
+
+.navMenuList {
+  display: none;
+  padding: 2%;
+}
+
+.miniMenuContainer {
+  background-color: rgb(109, 109, 109);
+  z-index: 3;
+  right: 2%;
+  top: 10%;
+  position: absolute;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  display: none;
+}
+
+.miniMenuUl {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.miniMenuUl > li > a {
+  text-decoration: none;
+  
+  display: block;
+  padding-top: 10%;
+}
+.miniMenuUl > li > a:visited {
+  color: white;
+}
+.miniMenuUl > li > a:active {
+  color: white;
+}
+.navMenuList > img {
+  width: 40px;
+  height: 40px;
+
+  transform: scaleY(0.9);
+}
+
+@media screen and (max-width: 770px) {
+  .navlist {
+    display: none;
+  }
+  .navMenuList {
+    display: block;
+  }
+  .miniMenuContainer{
+    display: block;
+  }
+  .navcontainer {
+    height: 75px;
+  }
+}

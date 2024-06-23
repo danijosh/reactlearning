@@ -1,0 +1,93 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.offercardContainer{
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    background-color: #F3F3F6;
+    padding: 45px 60px ;
+    border-radius: 10px;
+    width: 350px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    
+    .underlineoffer{
+        width: 100%;
+        height: 2px;
+        background-color: rgb(165, 165, 165);
+    }
+    h4{
+        font-size: 18px;
+        font-family: 'Poppins';
+        font-weight: 500;
+    }
+    ul{
+        // background-color: green;
+        // padding: 20px;
+        font-size: 14px;
+        font-family: 'Poppins';
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+        text-wrap: wrap;
+        list-style-position: inside;
+    
+        li::marker{
+            color: rgb(69, 149, 214);
+            font-size: 25px;
+            
+            margin-right: 0px;
+        }
+    }
+}
+
+
+.offercardContainer:hover{
+    background-color: white;
+    .underlineoffer{
+        background-color: rgb(69, 149, 214);
+    }
+    h4{
+        color: rgb(69, 149, 214);
+    }
+}
+
+.offerdetailsContainer{
+    width: 250px;
+}
+
+@media screen and (max-width:380px){
+    .offercardContainer{
+        width: 80%;
+        padding: 10px  ;
+        margin-left: 15px;
+        h4{
+            font-size: 16px;
+        }
+        .offerdetails{
+            font-size: 12px;
+            li{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px){
+    .offercardBody  {
+        width: 90%;
+    }
+    .offerdetailsContainer{
+        width: 100%;
+    }
+    .offerdetails{
+        li{
+            font-size: 11px;
+            
+        }
+    }
+
+}

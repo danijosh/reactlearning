@@ -1,0 +1,217 @@
+@import "../../fonts/Belgro.scss";
+
+.contactusBody {
+  margin-top: 20%;
+  padding-bottom: 7%;
+}
+
+.maincontainer {
+  // background-color: red;
+  padding: 30px;
+  margin-left: 5%;
+  display: flex;
+  .formContainer,
+  .contactContainer {
+    // background-color: blue;
+    padding: 30px;
+    margin: 2px;
+    flex-basis: 50%;
+  }
+}
+.contactContainer {
+  h1 {
+    margin-bottom: 10px;
+    color: rgb(43, 43, 43);
+    font: {
+      family: "Belgro";
+      size: 27px;
+      weight: 400;
+    }
+  }
+  .phone {
+    a {
+      text-decoration: none;
+      color: rgb(54, 164, 228);
+    }
+  }
+  .mail {
+    a {
+      color: rgb(54, 164, 228);
+    }
+  }
+  p {
+    margin-bottom: 10px;
+    font: {
+      family: "Poppins";
+      size: 16px;
+    }
+  }
+  .address {
+    font-weight: 300;
+    color: rgb(71, 75, 107);
+  }
+}
+
+.formContainer {
+  form {
+    padding-top: 6%;
+    margin-right: 8%;
+    .nameEmailContainer,
+    .phoneAddressContainer {
+      display: flex;
+    }
+  }
+}
+
+.nameContainer,
+.emailContainer,
+.phoneContainer,
+.addressContainer,
+.messageContainer {
+  display: flex;
+  // align-items: end;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 10%;
+  width: 46%;
+  input {
+    margin-right: 45px;
+    width: 100%;
+    background-color: #f3f3f6;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 2px rgb(167, 167, 167) solid;
+  }
+  input:hover {
+    border-bottom: 2px black solid;
+  }
+  input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins";
+    color: #a0a0a0;
+  }
+  p {
+    width: 70%;
+    color: red;
+    padding-top: 6px;
+  }
+}
+
+.messageContainer {
+  width: 92%;
+  input {
+    width: 100%;
+    background-color: #f3f3f6;
+    margin-bottom: 10px;
+  }
+}
+
+.agreeContainer {
+  margin-bottom: 30px;
+  label {
+    a {
+      margin-left: 30px;
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 300;
+      color: blue;
+    }
+  }
+  p {
+    width: 70%;
+    color: red;
+    padding-top: 6px;
+  }
+}
+
+.submitContainer {
+  button {
+    width: 140px;
+    height: 40px;
+    color: rgb(108, 108, 255);
+    background-color: #f3f3f6;
+    border: 2px solid rgb(108, 108, 255);
+    border-radius: 9px;
+    font: {
+      family: "Poppins";
+      size: 17px;
+    }
+  }
+  button:hover {
+    background-color: rgb(108, 108, 255);
+    color: white;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .maincontainer {
+    margin-top: 3%;
+    flex-direction: column;
+    .contactContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .address {
+        text-align: center;
+      }
+    }
+    .formContainer {
+      .nameEmailContainer,
+      .phoneAddressContainer {
+        flex-direction: column;
+      }
+    }
+  }
+  .nameContainer,
+  .emailContainer,
+  .phoneContainer,
+  .addressContainer,
+  .messageContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .nameContainer,
+  .emailContainer,
+  .phoneContainer,
+  .addressContainer,
+  .messageContainer {
+    input {
+      width: 120%;
+    }
+  }
+  .contactContainer {
+    padding: 0px !important;
+    margin: 2px;
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:330px) {
+  .formContainer{
+    padding: 0px !important;
+    width: 100%;
+  }
+  .nameContainer,
+  .emailContainer,
+  .phoneContainer,
+  .addressContainer,
+  .messageContainer {
+    input {
+      width: 110%;
+    }
+  }
+  .agreeContainer{
+    label{
+      a{
+        font-size: 14px;
+      }
+    }
+  }
+}

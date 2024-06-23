@@ -1,0 +1,143 @@
+@import '../../fonts/Belgro.scss';
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.WhoAreWeImgndParaContainer{
+    display: flex;
+    margin-bottom: 100px;
+    .whoareweimgContainer{
+        padding-right: 20px;
+        padding-bottom: 30px;
+        width: 50%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .whoareweContainer{
+        padding: 5%;
+        width: 50%;
+        h1{
+            margin-bottom:20px ;
+            color: rgb(43, 43, 43);
+            font: {
+                size: 24px;
+                family: 'Belgro';
+            }
+
+        }
+        p{
+            margin-bottom: 32px;
+            padding-right: 5%;
+            line-height: 30px;
+            color: rgb(100, 100, 100);
+            font: {
+                family: 'Poppins';
+                weight: 300;
+                size: 15px;
+            }
+        }
+        a{
+            font: {
+                family: 'Poppins';
+                size: 15px; 
+            }
+        }
+        a:visited{
+            color: rgb(84, 84, 255);
+        }
+    }
+}
+.imgsNdDetailsContainer{
+    display: flex;
+    width: 100%;
+    // background-color: grey;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        // background-color: red;
+        padding: 20px;
+        margin: 2px;
+        img{
+           padding-bottom: 18px;
+        }
+        p{
+            color: rgb(0, 0, 68);
+    
+            
+            font: {
+                family: 'Poppins';  
+                weight: 500;
+                size: 20px;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:936px){
+
+    .imgsNdDetailsContainer{
+        div{
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:826px){
+
+    .imgsNdDetailsContainer{
+        div{
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:770px){
+    .WhoAreWeImgndParaContainer{
+        flex-direction: column;
+        // background-color: red;
+        align-items: center;
+        .whoareweimgContainer{
+            width: 100%;
+            img{
+                width: 95%;
+            }
+        }
+        .whoareweContainer{
+            width: 100%;
+            margin-bottom: -10%;
+        }
+    }
+
+    .imgsNdDetailsContainer{
+        flex-direction: column;
+        div{
+            margin-bottom: 20px;
+        }
+        }
+}
+
+@media screen and (max-width:300px){
+    .whoareweContainer{
+        h1{
+            font-size: 20px !important;
+        }
+        p{
+            font-size: 13px !important;
+            margin-bottom: 2% !important;
+        }
+    }
+}
